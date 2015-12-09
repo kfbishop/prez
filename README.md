@@ -135,6 +135,7 @@ Option `--such-notes` modifies the print layout and the notes popup so that note
 
 * `-v`, `--version`: show version and exit
 * `-s <dir>`, `--slides-dir=<dir>`: customize name of the folder containing slides (default = `slides`)
+* `-d <dir>`, `--data-dir=<dir>`: location of input JSON files to populate Mustache fields in slides. (default = `data`)
 
 Assets & slides
 

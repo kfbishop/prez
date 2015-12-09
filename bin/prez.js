@@ -107,6 +107,9 @@ function notify (type, file, what) {
     if (killServerAfterPrint) {
       process.emit("kill-server");
     }
+  } else if (type === "invalid json") {
+    level = "warn".yellow;
+    info = "(error" + what + ")";
   }
 
   console.log("[%s] %s %s %s", level, type.bold, file.blue, info);
