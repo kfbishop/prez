@@ -1,19 +1,18 @@
 
-## Mustache / Data support
+<h2>Mustache / Data support</h2>
 
-Dynamic content suport can be managed using [Mustache](https://github.com/janl/mustache.js)
+Dynamic content suport can be managed using
+<a src="https://github.com/janl/mustache.js">Mustache</a>
 
 The following text is dynamically injected at build time:
 
-### {{ text.hello }}
+<h3 style="color:{{props.color1}}">{{ text.hello }}</h3>
 
 {{=<% %>=}}
-```
-{{ text.hello }}
-```
+<pre>&lt;h3 style="color:{{props.color1}}">{{ text.hello }}&lt;/h3></pre>
 <%={{ }}=%>
 
-note:
+<aside class="notes">
 
 The input data is a merge of all the JSON files in the "/data" directory. The base name of the json file becomes the top level key of the data. In the example above, the `data/text.json` file contains a map that includes a `hello` key.  This is merged with any other json files, and the result is a map that contains:
 
@@ -30,3 +29,5 @@ The input data is a merge of all the JSON files in the "/data" directory. The ba
 The "-d" / "--data-dir" argument can override the data dir location.
 
 The odd syntax used in the slide content example temporarily switch the token pattern to enable showing the raw handlebars.
+
+</aside>
