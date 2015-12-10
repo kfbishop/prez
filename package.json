@@ -1,6 +1,6 @@
 {
   "name": "prez",
-  "version": "4.5.1",
+  "version": "4.6.0",
   "description": "Custom version of 'Prez', including mustache support, to generate Reveal.js slideshows",
   "main": "index.js",
   "bin": {

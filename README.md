@@ -26,6 +26,7 @@ prez --serve --print --watch
 ```
 
 * edit your slides from `slides` folder (html or [markdown](https://www.npmjs.com/package/marked))
+* dynamic content insertion can be performed using [Mustache](https://github.com/janl/mustache.js) tagging, sourced from content in the `data` folder.
 * if you need some assets, you can work in `images`, `css`, `js`, `media` folders and use `includes.txt`
 * your slideshow is automatically built into `build` folder
 * your slideshow is hosted and your browser is opened to localhost:9000
@@ -43,6 +44,9 @@ prez --serve --print --watch
 #### Sample structure
 
 ```
+data/
+  props.json
+  text.json
 images/
 js/
 css/
@@ -123,6 +127,25 @@ This will generate "slides.pdf" from your slideshow.
 Option `--such-notes` modifies the print layout and the notes popup so that notes have more space.
 
 ![](such-notes.png)
+
+### Mustache support
+
+[Mustache](https://github.com/janl/mustache.js) provides a stateless token/value replacement syntax (eg. `{{ myVar }}`), which permits build time customization of your Prez slides.
+
+The input data is a merge of all the JSON files in the `/data` folder (see `--data-dir` option.) The base name of the json file becomes the top level key of the data. For example, the `data/text.json` file contains a map that includes a `hello` key.  This is merged with any other json files, and the result is a map that contains:
+
+```json
+{
+	"text" : {
+		"hello" : "Hello World",
+		...
+	},
+	...
+}
+```
+
+During the build, the an instance of `{{ text.hello }}` would be replaced by the matching data value of `Hello World`.
+
 
 ### Usage
 
