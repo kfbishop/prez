@@ -19,6 +19,7 @@ Prez uses [rc](https://www.npmjs.com/package/rc):
 ### Supported options and their defaults
 
 * `slides`: defaults to `"slides"`
+* `data`: defaults to `"data"`
 * `skipReveal`: defaults to `false`
 * `skipIndex`: defaults to `false`
 * `skipUser`: defaults to `false`
