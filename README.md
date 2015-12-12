@@ -165,6 +165,7 @@ Assets & slides
 * `--skip-reveal`: do not copy reveal.js slides into target directory (useful if you want faster build over existing build)
 * `--skip-index`: do not generate `index.html` in target (will remain untouched if already existing)
 * `--skip-user`: do not include user assets
+* `--skip-data`: do not process mustache templates, for slightly faster builds
 * `--keep-hidden`: render slides or chapters starting with a dot `.`
 * `--sub-covers`: auto generate cover slides with the dir name as a h1 for each group of vertical slides
 

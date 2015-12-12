@@ -23,6 +23,7 @@ Prez uses [rc](https://www.npmjs.com/package/rc):
 * `skipReveal`: defaults to `false`
 * `skipIndex`: defaults to `false`
 * `skipUser`: defaults to `false`
+* `skipData`: defaults to `false`
 * `keepHidden`: defaults to `false`
 * `print`: defaults to `false`
 * `printTheme`: defaults to `"simple"`
