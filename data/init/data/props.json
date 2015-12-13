@@ -1,4 +1,6 @@
 {
-	"color1": "red",
-	"background": "#0FF"
+	"props" : {
+		"color1": "red",
+		"background": "#0FF"
+	}
 }

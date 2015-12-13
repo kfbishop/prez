@@ -132,7 +132,7 @@ Option `--such-notes` modifies the print layout and the notes popup so that note
 
 [Mustache](https://github.com/janl/mustache.js) provides a stateless token/value replacement syntax (eg. `{{ myVar }}`), which permits build time customization of your Prez slides.
 
-The input data is a merge of all the JSON files in the `/data` folder (see `--data-dir` option.) The base name of the json file becomes the top level key of the data. For example, the `data/text.json` file contains a map that includes a `hello` key.  This is merged with any other json files, and the result is a map that contains:
+The input data is a merge of all the JSON files in the `/data` folder (see `--data-dir` option.) For example, the `data/text.json` file contains a nested map that includes `text.hello` key.  This is merged with any other json files, and the result is a map that contains:
 
 ```json
 {
