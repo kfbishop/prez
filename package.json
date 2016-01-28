@@ -35,10 +35,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lmtm/prez.git"
+    "url": "https://github.com/kfbishop/prez.git"
   },
   "bugs": {
-    "url": "https://github.com/lmtm/prez/issues"
+    "url": "https://github.com/kfbishop/prez/issues"
   },
-  "homepage": "https://github.com/lmtm/prez"
+  "homepage": "https://github.com/kfbishop/prez"
 }
